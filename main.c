@@ -3,6 +3,9 @@
 
 int main(void)
 {
-    printf("alsjdyhfkjlasgdfjkhasd");
+    int i=9;
+    while (1){
+        printf("%d",i++);
+    }
     return 0;
 }
