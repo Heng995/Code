@@ -2,7 +2,7 @@
 #include <stdlib.h>
 int main (void)
 {
-    int n1 = 1240;
+    int n1 = 1241;
     double n2 = 5.234;
     
     printf("n1的平方為 %d\n", n1 * n1);
