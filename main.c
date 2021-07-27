@@ -4,8 +4,7 @@
 int main(void)
 {
     int i=9;
-    while (1){
-        printf("%d",i++);
-    }
+    printf("ajshdlkahsdlkjasd\n");
+    printf("aksldjgfkajlesynfuiawsewngfoasieu");
     return 0;
 }
