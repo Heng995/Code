@@ -5,6 +5,6 @@ int main(void)
 {
     int i=9;
     printf("ajshdlkahsdlkjasd\n");
-    printf("aksldjgfkajlesynfuiawsewngfoasieu");
+    printf("aksldjgfkajlesynfuiawsewngfoasieu\n");
     return 0;
 }

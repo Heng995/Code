@@ -1,39 +1,17 @@
 {
+    // 使用 IntelliSense 以得知可用的屬性。
+    // 暫留以檢視現有屬性的描述。
+    // 如需詳細資訊，請瀏覽: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "java",
-            "name": "Java Debug (Launch)",
-            "request": "launch"
-        },
-        {
-            "name": "Python: Current File",
-            "type": "python",
-            "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal"
-        },
-        {
-            "name": "C Debug",
+            "name": "clang",
             "type": "lldb",
             "request": "launch",
-            "program": "${workspaceFolder}/.vscode/c_debug_cache/${fileBasenameNoExtension}",
-            "args": [
-                "-arg1",
-                "-arg2"
-            ],
+            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+            "args": [],
+            "cwd": "${fileDirname}",
             "preLaunchTask": "clang"
-        },
-        {
-            "name": "C++ Debug",
-            "type": "lldb",
-            "request": "launch",
-            "program": "${workspaceFolder}/.vscode/c_debug_cache/${fileBasenameNoExtension}",
-            "args": [
-                "-arg1",
-                "-arg2"
-            ],
-            "preLaunchTask": "clang++"
         }
     ]
 }
