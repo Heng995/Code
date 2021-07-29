@@ -2,8 +2,8 @@
 int main (void)
 {
     char month;
-    printf("請輸入1~4\n");
-    scanf("%d", month);
+    printf("請輸入1~4:");
+    scanf("%c", &month);
     switch (month)
     {
     case '1':
