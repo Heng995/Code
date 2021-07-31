@@ -2,13 +2,91 @@
 #include <stdlib.h>
 int main (void)
 {
-    int i=1, sum=0;
-    while (sum<=100)
+    for(int i=0;i<10;i++)//次數//
     {
-        sum += i;
-        printf("%2d=%2d\n", i, sum);
-        i++;
+
+        int j = 0;
+        while(j<=i)//while*//
+        {
+            printf("* ");
+            j++;
+        }
+        printf("\n");
     }
-    printf("%d次", i-1);
+    printf("\n");
+
+    for(int i=0;i<10;i++)//次數//
+    {
+        for(int j=10;j>i;j--)//for//
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    printf("\n");
+
+    for(int i=0;i<10;i++)//次數//
+    {
+        for(int k=9;k>i;k--)//for空//
+        {
+            printf("  ");
+        }
+        for(int j=0;j<=i;j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    printf("\n");
+
+    for(int i=0;i<10;i++)
+    {
+        int k=1;
+        while (k<=i)
+        {
+            printf("  ");
+            k++;
+        }
+        for(int j=10;j>i;j--)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    printf("\n");
+
+    for(int i=0;i<=10;i++)
+    {
+        for(int j=10;j>i;j--)
+        {
+            printf(" ");
+        }
+        for(int k=0;k<=i;k++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    printf("\n");
+
+    for(int i=0;i<10;i=i+2)
+    {
+        for(int j=0;j<=i;j++)
+        {
+            printf("*  ");
+        }
+        printf("\n");
+ 
+    }
+    for(int i=0;i<12;i=i+2)
+    {
+        for(int j=11;j>i;j--)
+        {
+            printf("*  ");
+        }
+        printf("\n");
+    }
+    printf("\n");
+    system("pause");
     return 0;
-}
+}     
