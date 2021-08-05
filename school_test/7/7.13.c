@@ -13,8 +13,8 @@ int main (void)
     }
     while (i<=n)
     {
-        sum = i+2;
-        i++;
+        sum += i;
+        i += 2;
     }
 
     printf("2+4+6+..+n=%d\n",sum);
