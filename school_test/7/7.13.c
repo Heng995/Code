@@ -2,13 +2,22 @@
 #include <stdlib.h>
 int main (void)
 {
-    int n, sum = 0;
+    int n=1, i = 0, sum = 0;
     printf("2+4+6+..+n=?\n");
-    printf("n = ");
-    scanf("%d", n);
+ 
 
-    while
+    while (n%2 != 0)
     {
-        
+        printf("n = ");
+        scanf("%d", &n);
     }
+    while (i<=n)
+    {
+        sum = i+2;
+        i++;
+    }
+
+    printf("2+4+6+..+n=%d\n",sum);
+    system("pause");
+    return 0;
 }
