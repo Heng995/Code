@@ -2,9 +2,9 @@
 #include <stdlib.h>
 int main (void)
 {
+    printf("1.\n");
     for(int i=0;i<10;i++)//次數//
     {
-
         int j = 0;
         while(j<=i)//while*//
         {
@@ -15,6 +15,7 @@ int main (void)
     }
     printf("\n");
 
+    printf("2.\n");
     for(int i=0;i<10;i++)//次數//
     {
         for(int j=10;j>i;j--)//for//
@@ -25,6 +26,7 @@ int main (void)
     }
     printf("\n");
 
+    printf("3.\n");
     for(int i=0;i<10;i++)//次數//
     {
         for(int k=9;k>i;k--)//for空//
@@ -39,6 +41,7 @@ int main (void)
     }
     printf("\n");
 
+    printf("4.\n");
     for(int i=0;i<10;i++)
     {
         int k=1;
@@ -55,6 +58,7 @@ int main (void)
     }
     printf("\n");
 
+    printf("5.\n");
     for(int i=0;i<=10;i++)
     {
         for(int j=10;j>i;j--)
@@ -69,6 +73,7 @@ int main (void)
     }
     printf("\n");
 
+    printf("6.\n");
     for(int i=0;i<10;i=i+2)
     {
         for(int j=0;j<=i;j++)
