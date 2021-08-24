@@ -37,3 +37,11 @@ int is_prime(int num)
     return 1;
 }
 
+/*     階乘     */
+void fac(int n)
+{
+    int i, total = 1;
+    for(i=1;i<=n;i++)
+        total *= i;
+    printf("1*2*3*....*%d = %d\n", n, total);
+}
