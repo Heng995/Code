@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /*     加法    */
 int add(int n1, int n2) 
 {
