@@ -24,6 +24,6 @@ int main (void)
     {
         printf("No real root\n");
     }
-    1234;
+
     return 0;
 }
