@@ -2,8 +2,30 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "gcc-11",
-            "command": "/usr/local/bin/gcc-11",
+            "label": "gcc",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "偵錯工具產生的工作。"
+        },
+        {
+            "type": "cppbuild",
+            "label": "g++",
+            "command": "g++",
             "args": [
                 "-g",
                 "${file}",
@@ -46,28 +68,6 @@
         },
         {
             "type": "cppbuild",
-            "label": "gcc.exe",
-            "command": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe",
-            "args": [
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
-            ],
-            "options": {
-                "cwd": "${fileDirname}"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "detail": "偵錯工具產生的工作。"
-        },
-        {
-            "type": "cppbuild",
             "label": "clang++",
             "command": "/usr/bin/clang++",
             "args": [
@@ -90,13 +90,13 @@
         },
         {
             "type": "cppbuild",
-            "label": "g++-11",
-            "command": "/usr/local/bin/g++-11",
+            "label": "gcc_win",
+            "command": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe",
             "args": [
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"
@@ -112,7 +112,7 @@
         },
         {
             "type": "cppbuild",
-            "label": "g++.exe",
+            "label": "g++_win",
             "command": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
             "args": [
                 "-g",
