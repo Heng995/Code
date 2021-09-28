@@ -13,7 +13,7 @@ elif(pet == '貓'):
     elif(cat_age == 2):
         human_age = 24
     else:
-        human_age = 4 * cat_age + 16
+        human_age = int(4 * (int(cat_age)) + 16)
     print('你的貓是人的', human_age, '歲')
 else:
     print('只能輸入「狗」或「貓」!')
