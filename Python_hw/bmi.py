@@ -7,5 +7,5 @@ if(bmi<18.5):
     print('體重過輕')
 elif(bmi<24):
     print('體重適中')
-elif(bmi<27):
+elif(bmi<=27):
     print('輕微肥胖')
