@@ -21,3 +21,7 @@ for i in a:
         for k in c:
             if num3-i-j-k == 0:
                 print((a.index(i), b.index(j), c.index(k)))
+    
+num = input('num = ?')
+aa = num ** num            
+print(aa)
